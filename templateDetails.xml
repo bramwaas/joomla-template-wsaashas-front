@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site" method="upgrade">
+	<name>asha-s_front</name>
+	<creationDate>30/12/2015</creationDate>
+	<author>A.H.C. Waasdorp</author>
+	<authorEmail>bram@waasdorpsoekhan.nl</authorEmail>
+	<authorUrl>http://www.waasdorpsoekhan.nl</authorUrl>
+	<copyright>Copyright (C) 2012 - 2019 A.H.C. Waasdorp. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>1.1.3</version>
+	<description>Asha-s template developed for homepage website Asha-s.com and Soekhan.nl</description>
+	<files>
+		<filename>favicon.ico</filename>
+		<filename>favicon_as.ico</filename>
+		<filename>favicon_ws.ico</filename>
+		<filename>gatracker.php</filename>
+		<filename>include_link_rel_canonical.php</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+	</files>
+	<positions>
+		<position>logo</position>
+ 		<position>icons</position>
+        	<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>topright</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+		<position>debug</position>
+		<position>syndicate</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="explanation1"  type="spacer" hr="false"
+					label="With these variables you can change the lay-out of the template a little bit.&lt;br /&gt;General:"
+					 />
+				<field name="gplusProfile" type="text" default="" 
+					label="G+Profile" 
+					description="Google+ profile"
+					/>
+
+				<field name="bgImage" type="media" default="/templates/asha-s_front_v1.1/images/asha-s_img_4660.jpg" 
+                                       	label="Background image:" description="Select a background image." />
+				<field name="bgWidth"  class="validate-numeric" type="text" default="50"
+					label="Width background image:"
+					description="Width background image as percentage, 100 = full screen"
+					 />
+				<field name="bgTop"  type="text" default=""
+					label="Margin top background image:"
+					description="Background image margin top as percentage(s) "
+					 />	
+				<field name="bgLeft"  type="text" default=""
+					label="Margin left background image:"
+					description="Background image margin left as percentage(s) "
+					 />					 
+					 
+				<field name="bgColor"  type="text" default="#080810"
+					label="Background color:"
+					description="Background color #RGB, #000000 = black, #FF0000 = red, #00FF00 = green, #0000FF = blue, #FFFFFF = white, default #080810  "
+					 />
+				<field name="fgColor"  type="text" default=""
+					label="Foreground color:"
+					description="If not empty overwrite color of most texts .  #RGB, #000000 = black, #FF0000 = red, #00FF00 = green, #0000FF = blue, #FFFFFF = white, default empty"
+					 />
+				<field name="iconsWidth"  class="validate-numeric" type="text" default="37.2"
+					label="Width icons fb etc:"
+					description="Width icons fb etc. as percentage of width page"
+		 />
+				<field name="iconsPosLeft"  class="validate-numeric" type="text" default="60"
+					label="Left margin icons:"
+					description="Position left margin icons as percentage of width 0 = left edge, 100 = right edge"
+					 />
+				<field name="iconsPosTop"  class="validate-numeric" type="text" default="0"
+					label="Top margin icons:"
+					description="Position top icons as percentage of height, 0 = top, 100 = (under) bottom"
+					 />
+				<field name="logo" type="media" default="/templates/asha-s_front_v1.1/images/asha-s_white_transparent_b1000.png" 
+                                       	label="Logo image:" description="Select a logo image." />
+				<field name="logoWidth"  class="validate-numeric" type="text" default="37.2"
+					label="Width logo:"
+					description="Width logo as percentage of width page"
+					 />
+				<field name="logoPosLeft"  class="validate-numeric" type="text" default="60"
+					label="Left margin logo:"
+					description="Position left margin logo as percentage of width 0 = left edge, 100 = right edge"
+					 />
+				<field name="logoPosTop"  class="validate-numeric" type="text" default="0"
+					label="Top margin logo:"
+					description="Position top logo as percentage of height, 0 = top, 100 = (under) bottom"
+					 />
+				<field name="contentPosLeft"  class="validate-numeric" type="text" default="70"
+					label="Left margin content:"
+					description="Position left margin content as percentage 0 = left edge, 100 = right edge"
+					 />
+				<field name="contentWidth"  class="validate-numeric" type="text" default="29.9"
+					label="Width content:"
+					 />
+				<field name="contentPosTop"  class="validate-numeric" type="text" default="29"
+					label="Top margin content:"
+					description="Position top margin content"
+					/>
+				<field name="marginLeftRight"  class="validate-numeric" type="text" default="2.0"
+					label="Margins left and right:"
+					description="Margins left and right as percentage"
+		 />
+				<field name="footerWidth"  class="validate-numeric" type="text" default="80.0"
+					label="Width footers:"
+					description="Width footer as percentage of pagewidth"
+					 />
+				<field name="footerPosLeft"  class="validate-numeric" type="text" default="5.0"
+					label="Left margin footer:"
+					description="Position left margin footer as percentage of width 0 = left edge, 100 = right edge"
+					 />
+				<field name="footerPosBottom"  class="validate-numeric" type="text" default="0.0"
+					label="Bottom margin footer:"
+					description="Position bottom footer as percentage of height, 0 = bottom"
+					 />
+
+				<field name="explanation2"  type="spacer" hr="false"
+					label="Color links and menuoptions #RGB or colorname. #RGB: #000000 = black, #FF0000 = red, #00FF00 = lime, #0000FF = blue, #FFFFFF = white.&lt;br /&gt;Names: yellow, fuchsia, red, aqua, lime, blue, olive, purple, maroon, teal, green, navy, white, black, gray, silver."
+					 />
+				<field name="linkColor"  type="text" default=""
+					label="Link color:"
+					description="If not empty overwrite color of links . Default empty  "
+					 />
+				<field name="linkDecoration" type="list" default=""
+					label="Underline link"	
+ 				    description="Underline link."
+				>
+					<option value="">Default</option>
+					<option value="underline">Yes</option>
+					<option value="none">No</option>
+				</field>
+				<field name="linkHvColor"  type="text" default=""
+					label="Link hover color:"
+					description="If not empty overwrite color of link where mouse hovers above . Default empty  "
+					 />
+				<field name="menuMarginTop"  class="validate-numeric" type="text" default="18.5"
+					label="Margin top menu:"
+					description="Margin top menu as percentage."
+					 />
+				<field name="menuColor"  type="text" default=""
+					label="Menutext color:"
+					description="If not empty overwrite color of menu text . Default empty  "
+					 />
+				<field name="menuFontSize"  class="validate-numeric" type="text" default=""
+					label="Menu text size:"
+					description="Menu text font size (pixels)."
+					 />
+				<field name="menuDisplay" type="list" default=""
+					label="Horizontal menu"	
+ 				    description="Underline menu text."
+				>
+					<option value="">Default</option>
+					<option value="inline">Horizontal</option>
+				</field>
+					 
+				<field name="menuDecoration" type="list" default=""
+					label="Underline menu text"	
+ 				    description="Underline menu text."
+				>
+					<option value="">Default</option>
+					<option value="underline">Yes</option>
+					<option value="none">No</option>
+				</field>
+				<field name="menuHvColor"  type="text" default=""
+					label="Menu hover color:"
+					description="If not empty overwrite color of menu text where mouse hovers above . Default empty  "
+					 />
+				<field name="menuHvDecoration" type="list" default=""
+					label="Underline hovered menu text"	
+ 				    description="Underline menu text where mouse hovers above."
+				>
+					<option value="">Default</option>
+					<option value="underline">Yes</option>
+					<option value="none">No</option>
+				</field>
+				<field name="menuActiveColor"  type="text" default=""
+					label="Active menu color:"
+					description="If not empty overwrite text color of active menu. Default empty  "
+					 />
+				<field name="menuActiveDecoration" type="list" default=""
+					label="Underline active menu item"	
+ 				    description="Underline the active menu item."
+				>
+					<option value="">Default</option>
+					<option value="underline">Yes</option>
+					<option value="none">No</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+    <updateservers>
+	<server type="collection" name="WaasdorpSoekhan extensions"><![CDATA[http://www.waasdorpsoekhan.nl/update/waasdorpsoekhan_list.xml]]></server>
+    </updateservers>
+
+</extension>

@@ -2,13 +2,13 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "https://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 <extension version="3.1" type="template" client="site" method="upgrade">
 	<name>asha-s_front</name>
-	<creationDate>30/12/2015</creationDate>
+	<creationDate>04-08-2016</creationDate>
 	<author>A.H.C. Waasdorp</author>
 	<authorEmail>bram@waasdorpsoekhan.nl</authorEmail>
 	<authorUrl>http://www.waasdorpsoekhan.nl</authorUrl>
 	<copyright>Copyright (C) 2012 - 2019 A.H.C. Waasdorp. All rights reserved.</copyright>
 	<license>GNU/GPL</license>
-	<version>1.1.3</version>
+	<version>1.1.4</version>
 	<description>Asha-s template developed for homepage website Asha-s.com and Soekhan.nl</description>
 	<files>
 		<filename>favicon.ico</filename>
@@ -217,7 +217,7 @@
 		</fields>
 	</config>
     <updateservers>
-	<server type="collection" name="WaasdorpSoekhan extensions"><![CDATA[http://www.waasdorpsoekhan.nl/update/waasdorpsoekhan_list.xml]]></server>
+	<server type="extension" priority="1" name="Asha S Front Template"><![CDATA[http://www.waasdorpsoekhan.nl/update/ashas/ashasfront.xml]]></server>
     </updateservers>
 
 </extension>
